@@ -1,0 +1,30 @@
+server:
+  port: 8087
+  error:
+    include-message: always
+
+keycloak:
+  server:
+    contextPath: /auth
+    adminUser:
+      username: bael-admin
+      password: pass
+    realmImportFile: baeldung-realm.json
+
+spring:
+  main:
+    allow-bean-definition-overriding: true
+#    datasource:
+#      username: sa
+#      url: jdbc:h2:mem:testdb
+  datasource:
+    #Postgre
+    url: jdbc:postgresql://localhost:5432/test_oauth
+    username: postgres
+    password: 654321
+    driverClassName: org.postgresql.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect:org.hibernate.dialect.PostgreSQL10Dialect
+    generate-ddl: true
