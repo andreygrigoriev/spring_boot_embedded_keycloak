@@ -1,6 +1,6 @@
 ## How to run Keycloak server (17.x) embedded into a Spring Boot application
 
-Example uses [article on Baeldung](https://www.baeldung.com/keycloak-embedded-in-spring-boot-app) as a reference and adapts it to the latest version of Keycloak
+Example uses [article on Baeldung](https://www.baeldung.com/keycloak-embedded-in-spring-boot-app) as a reference and adapts it to the latest version of Keycloak.
 PostgreSQL is used as a DB driver for Keycloak.
 
 For further reference, please consider the following sections:
